@@ -9,15 +9,18 @@ export default function Contenedor() {
   const [listaTareas, setListaTareas] = React.useState([]);
 
   function queHacerAlAgregarTarea(tarea) {
-    const esTareaDuplicada = Boolean(
-      listaTareas.filter((t) => t.tarea === tarea).length
+ 
+    const esTareaDuplicada = Boolean(listaTareas.filter((t) => t.tarea === tarea).length,
+      
     );
+   
 
-    if (esTareaDuplicada) return;
-
-    setListaTareas([
-      ...listaTareas,
-      { tarea: tarea.toLowerCase(), estaCompletada: false }
+    if (esTareaDuplicada) {
+    alert('La tarea ya existe');
+    
+    return
+    }
+    setListaTareas([...listaTareas, { tarea: tarea.toLowerCase(), estaCompletada: false }
     ]);
   }
 
@@ -42,6 +45,7 @@ export default function Contenedor() {
       <ul>
         {listaTareas.map((tarea) => (
           <Tareas
+         
             key={tarea.tarea}
             nombreTarea={tarea.tarea}
             onTareaCompletada={() => onTareaCompletada(tarea.tarea)}
