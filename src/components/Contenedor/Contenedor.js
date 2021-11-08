@@ -40,9 +40,11 @@ export default function Contenedor() {
   }
 
   return (
+    
     <div className="Contenedor">
       <IngresoTarea onAdd={queHacerAlAgregarTarea} />
       <ul>
+     
         {listaTareas.map((tarea) => (
           <Tareas
          
