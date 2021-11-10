@@ -1,17 +1,23 @@
 
 import './App.css';
-import Contenedor from './components/Contenedor/Contenedor';
+
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
+import Contenedor from "./components/Contenedor/Contenedor"
+import VistaContenedor from './components/VistaContenedor/VistaContenedor';
 
- function App() {
-  
+
+function App() {
+
   return (
     <div className="App">
-    <Header/>
-    <Contenedor/>
-    <Footer/> 
+      <Header />
+      <Contenedor />
+      
+      
+      <Footer />
+
     </div>
   );
 }
