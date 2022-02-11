@@ -5,20 +5,20 @@ import Tareas from '../Tareas/Tareas';
 
 export default function Contenedor() {
 
-  
+
   const [listaTareas, setListaTareas] = React.useState([]);
 
   function queHacerAlAgregarTarea(tarea) {
- 
+
     const esTareaDuplicada = Boolean(listaTareas.filter((t) => t.tarea === tarea).length,
-      
+
     );
-   
+
 
     if (esTareaDuplicada) {
-    alert('La tarea ya existe');
-    
-    return
+      alert('La tarea ya existe');
+
+      return
     }
     setListaTareas([...listaTareas, { tarea: tarea.toLowerCase(), estaCompletada: false }
     ]);
@@ -40,14 +40,14 @@ export default function Contenedor() {
   }
 
   return (
-    
+
     <div className="Contenedor">
       <IngresoTarea onAdd={queHacerAlAgregarTarea} />
       <ul>
-     
+
         {listaTareas.map((tarea) => (
           <Tareas
-         
+
             key={tarea.tarea}
             nombreTarea={tarea.tarea}
             onTareaCompletada={() => onTareaCompletada(tarea.tarea)}
