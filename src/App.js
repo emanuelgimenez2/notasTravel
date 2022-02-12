@@ -12,10 +12,10 @@ function App() {
 
   return (
     <div className="App">
-      <HeaderVista/> 
+     {/*  <HeaderVista/>  */}
       <Header />
-      <Contenedor />
-      <Footer />
+    {/*   <Contenedor /> */}
+     {/*  <Footer /> */}
     </div>
   );
 }
