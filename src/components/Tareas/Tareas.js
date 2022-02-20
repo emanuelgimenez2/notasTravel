@@ -10,7 +10,7 @@ export default function Tareas({
         
         <div className="container">
             <span className="form-control" form-control >{nombreTarea}</span>
-            <div class="input-group-text">
+            <div className="input-group-text">
                 <input type="checkbox"
                     className="form-check-input mt-0"
                     checked={estaCompletada}

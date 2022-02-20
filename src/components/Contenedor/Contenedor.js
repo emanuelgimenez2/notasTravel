@@ -10,9 +10,7 @@ export default function Contenedor() {
 
   function queHacerAlAgregarTarea(tarea) {
 
-    const esTareaDuplicada = Boolean(listaTareas.filter((t) => t.tarea === tarea).length,
-
-    );
+    const esTareaDuplicada = Boolean(listaTareas.filter((t) => t.tarea === tarea).length,);
 
 
     if (esTareaDuplicada) {

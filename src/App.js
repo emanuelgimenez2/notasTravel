@@ -1,21 +1,15 @@
+import "./App.css";
 
-import './App.css';
-
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Contenedor from "./components/Contenedor/Contenedor"
-import HeaderVista from './components/HeaderVista/HeaderVista';
-
-
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Contenedor from "./components/Contenedor/Contenedor";
 
 function App() {
-
   return (
     <div className="App">
-     {/*  <HeaderVista/>  */}
       <Header />
-    {/*   <Contenedor /> */}
-     {/*  <Footer /> */}
+      <Contenedor />
+      <Footer />
     </div>
   );
 }
