@@ -1,6 +1,7 @@
 import React from 'react'
 import IngresoTarea from '../IngresoTarea/IngresoTarea';
 import Tareas from '../Tareas/Tareas';
+import './Contenedor.css';
 
 
 export default function Contenedor() {
